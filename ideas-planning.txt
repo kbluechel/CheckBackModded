@@ -1,0 +1,26 @@
+v1.1 Concept ideas:
+A frozen themed crate unlocked at level 500m
+It will reset all dimensions [like a dimension reset] but the amount of crates opened increases with tiers
+1d cooldown, very big stat scaling, all dimensions multiplier stat coming from pets
+Very rare pets [into the thousands] but considering that you open many crates at once [+100]
+Big amounts of pets required
+Also some sort of rebuyable upgrades
+
+v1.2 Concept ideas:
+Prestige layer that resets everything
+"Times prestiged" Milestone system for boosts/qol (Starts with x2 to XP, XPBoost, loot, stats and dimensions)
+Some sort of upgrade tiers like "Starts with pet (x) on reset" "Starts with upgrades (x-y) bought"
+Early progression will be based on speeding up everything as much as possible
+Also increases the amounts of crates opened
+
+
+To be added ideas:
+-Push notifications when a button is ready [should take a look into it + settings]
+
+---------------------------------------------------------
+Future reference for future features:
+
+for (let i=0;i<game.pets.length;i++) {if (game.pets[i] is in some form) game.pets[i] = 0}
+---------------------------------------------------------
+Will note down things here that I experiment when playing in the new save
+
