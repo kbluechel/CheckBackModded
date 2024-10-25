@@ -384,45 +384,6 @@ for (let i=1;i<Dimensions.length;i++) {
     document.getElementById("fight2Button").innerHTML = "Fight an area 2 foe "
   }
 
-  if (XPTab() == true) {
-    document.getElementById("XPTab").classList.add("flickering")
-  }
-  else {
-    document.getElementById("XPTab").classList.remove("flickering")
-  }
-
-  if (XPBoostTab() == true) {
-    document.getElementById("XPBoostTab").classList.add("flickering")
-  }
-  else {
-    document.getElementById("XPBoostTab").classList.remove("flickering")
-  }
-
-  if (StatTab() == true) {
-    document.getElementById("StatsTab").classList.add("flickering")
-  }
-  else {
-    document.getElementById("StatsTab").classList.remove("flickering")
-  }
-
-  if (CratesTab() == true) {
-    document.getElementById("CratesTab").classList.add("flickering")
-  }
-  else {
-    document.getElementById("CratesTab").classList.remove("flickering")
-  }
-  if (DimTab() == true) {
-    document.getElementById("TimeTab").classList.add("flickering")
-  }
-  else {
-    document.getElementById("TimeTab").classList.remove("flickering")
-  }
-
- if (FightingTab() == true) {
-  document.getElementById("fightingTabButton").classList.add("flickering")
- }
- else {document.getElementById("fightingTabButton").classList.remove("flickering")}
-
  if (game.buttonCooldowns[23] > 0) {}
  else {autoPets()}
  if (game.buttonCooldowns[24] > 0) {

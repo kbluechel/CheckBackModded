@@ -1,8 +1,8 @@
 const FightingButtons = [ //Stats of the xpboost buttons
   {name: "Test", level: 0, xpboost: 0, cooldown: 60, cooldownID: 0, unlock: 0},
   {name: "Area1", cooldown: 1800, cooldownID: 21, unlock: 21},
-  {name: "Area2", cooldown: 3600, cooldownID: 22, unlock: 2},
-  {name: "Area3", cooldown: 3600, cooldownID: 26, unlock: 25},
+  {name: "Area2", cooldown: 1800, cooldownID: 22, unlock: 2},
+  {name: "Area3", cooldown: 1800, cooldownID: 26, unlock: 25},
 ]
 
 //All of fighting stuff will be added here
@@ -131,7 +131,7 @@ function openCloseEnemiesTab() {
           totalWeight -= starterEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[21] = 3600 / (game.itemCooldown * game.tierCooldown) //1h
+     game.buttonCooldowns[21] = 1800 / (game.itemCooldown * game.tierCooldown) //1h
     }
     if (x==2) {
       for (i=0;i<intermediateEnemiesChances.length;i++) totalWeight += intermediateEnemiesChances[i][1]
@@ -144,7 +144,7 @@ function openCloseEnemiesTab() {
           totalWeight -= intermediateEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[22] = 21600 / (game.itemCooldown * game.tierCooldown) //6h
+     game.buttonCooldowns[22] = 7200 / (game.itemCooldown * game.tierCooldown) //6h
     }
     if (x==3) {
       for (i=0;i<advancedEnemiesChances.length;i++) totalWeight += advancedEnemiesChances[i][1]
@@ -157,7 +157,7 @@ function openCloseEnemiesTab() {
           totalWeight -= advancedEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[26] = 86400 / (game.itemCooldown * game.tierCooldown) //24h
+     game.buttonCooldowns[26] = 28800 / (game.itemCooldown * game.tierCooldown) //24h
     }
     if (x==4) {
       game.currentHP = game.HP
@@ -165,7 +165,7 @@ function openCloseEnemiesTab() {
       if (document.getElementById("dailyMessagesDiv").style.display == "block") {openCloseMessages(0)}
       openCloseMessages(3)
       attackBoss()
-    game.buttonCooldowns[36] = 43200 / (game.itemCooldown * game.tierCooldown) //12h
+    game.buttonCooldowns[36] = 14400 / (game.itemCooldown * game.tierCooldown) //12h
     }
     else {
     if (document.getElementById("dailyMessagesDiv").style.display == "block") {openCloseMessages(0)}
