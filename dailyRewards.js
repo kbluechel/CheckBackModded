@@ -63,7 +63,7 @@ function openCloseDailyRewardTab() {
   }
   
   function claimDailyReward() {
-    game.buttonCooldowns[9] = 86400 / (game.itemCooldown * game.tierCooldown) //24 hours
+    game.buttonCooldowns[9] = 7200 / (game.itemCooldown * game.tierCooldown) //2 hours
     game.dailyRewards++
     displayDailyRewards()
     if (game.dailyRewards % 2 == 1) {
