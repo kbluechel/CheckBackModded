@@ -9,9 +9,9 @@ function openCloseMessages(x) {
             document.getElementById("equipPet").style.display = "block"
             equipPet = petChosen
             if (game.pets[petChosen] == 0) {
-                document.getElementById("messageInfo").innerHTML = "<br><br><center><p style='color: white'><span style='font-size: 32px; font-weight: bold'>" + pets[petChosen][0] + "</span><br>New pet discovered! </p><br><img src='img/pets/" + petChosen + ".png' style='width: 50%'><br><p style='color: white'><span style='font-size: 32px; font-weight: bold'>Effects:</span><br>" + dropPetStats(petChosen) +"</p></center>"
+                document.getElementById("messageInfo").innerHTML = "<br><br><center><p style='color: white'><span style='font-size: 32px; font-weight: bold'>" + pets[petChosen][0] + "</span><br>New pet discovered! </p><br><img src='img/pets/" + petChosen + ".png' style='width: 50%'><br><p style='color: white'><span style='font-size: 32px; font-weight: bold'>Effects:</span><br>" + dropPetStats(petChosen) + "</p></center>"
             } else {
-                document.getElementById("messageInfo").innerHTML = "<br><br><center><p style='color: white'><span style='font-size: 32px; font-weight: bold'>" + pets[petChosen][0] + "</span><br>You have " + (game.pets[petChosen] + 1) + "</p><br><img src='img/pets/" + petChosen + ".png' style='width: 50%'><br><p style='color: white'><span style='font-size: 32px; font-weight: bold'>Effects:</span><br>" + dropPetStats(petChosen) +"</p></center>"
+                document.getElementById("messageInfo").innerHTML = "<br><br><center><p style='color: white'><span style='font-size: 32px; font-weight: bold'>" + pets[petChosen][0] + "</span><br>You have " + (game.pets[petChosen] + 1) + "</p><br><img src='img/pets/" + petChosen + ".png' style='width: 50%'><br><p style='color: white'><span style='font-size: 32px; font-weight: bold'>Effects:</span><br>" + dropPetStats(petChosen) + "</p></center>"
             }
         }
         else if (x == 2) {
@@ -28,4 +28,4 @@ function dropPetStats(x) {
     if (pets[x][4] > 1) result += "x" + numberShort(pets[x][4]) + " XPBoost<br>"
     if (pets[x][5] > 1) result += "x" + numberShort(pets[x][5]) + " All Dimensions Multi<br>"
     return result
-  }
+}

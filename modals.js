@@ -10,7 +10,7 @@ function onDomReady(fn) {
 }
 
 onDomReady(function () {
-    document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown", function (event) {
         const key = event.key; // Or const {key} = event; in ES6+
         if (key === "Enter" || key === " " || key === "Escape") {
             document.getElementById("dailyMessagesDiv").style.display = "none";
