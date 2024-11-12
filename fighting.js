@@ -131,7 +131,7 @@ function openCloseEnemiesTab() {
           totalWeight -= starterEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[21] = 1800 / (game.itemCooldown * game.tierCooldown) //1h
+     game.buttonCooldowns[21] = 1800 / (game.itemCooldown * game.tierCooldown) //,5h
     }
     if (x==2) {
       for (i=0;i<intermediateEnemiesChances.length;i++) totalWeight += intermediateEnemiesChances[i][1]
@@ -144,7 +144,7 @@ function openCloseEnemiesTab() {
           totalWeight -= intermediateEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[22] = 7200 / (game.itemCooldown * game.tierCooldown) //6h
+     game.buttonCooldowns[22] = 7200 / (game.itemCooldown * game.tierCooldown) //2h
     }
     if (x==3) {
       for (i=0;i<advancedEnemiesChances.length;i++) totalWeight += advancedEnemiesChances[i][1]
@@ -157,7 +157,7 @@ function openCloseEnemiesTab() {
           totalWeight -= advancedEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[26] = 28800 / (game.itemCooldown * game.tierCooldown) //24h
+     game.buttonCooldowns[26] = 28800 / (game.itemCooldown * game.tierCooldown) //8h
     }
     if (x==4) {
       game.currentHP = game.HP
@@ -165,7 +165,7 @@ function openCloseEnemiesTab() {
       if (document.getElementById("dailyMessagesDiv").style.display == "block") {openCloseMessages(0)}
       openCloseMessages(3)
       attackBoss()
-    game.buttonCooldowns[36] = 14400 / (game.itemCooldown * game.tierCooldown) //12h
+    game.buttonCooldowns[36] = 14400 / (game.itemCooldown * game.tierCooldown) //4h
     }
     else {
     if (document.getElementById("dailyMessagesDiv").style.display == "block") {openCloseMessages(0)}
@@ -268,4 +268,6 @@ function openCloseEnemiesTab() {
     game.CoinsCounter = 0
     game.XPBoostCounter = 0
     game.ConsecutiveKills = 0
+       //refresh the fighting screen to reflect the just earned rewards
+       displayStats();
    }
